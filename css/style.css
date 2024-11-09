@@ -135,6 +135,7 @@ button {
 /* #region Hero */
 .section-hero {
   background-color: #2e2f42;
+  padding: 188px;
 }
 
 .hero-tytle {
@@ -152,9 +153,10 @@ button {
 }
 
 .hero-button {
-  display: flex;
+  display: block;
   margin: 0 auto;
   border-radius: 4px;
+  border: none;
   padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 500;
@@ -202,7 +204,7 @@ button {
 }
 
 .advantages-subtitle {
-  padding: 8px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -238,19 +240,23 @@ button {
   display: flex;
   align-items: center;
   gap: 24px;
-  width: calc((100% - 72px) / 4);
 }
 
 .team-list-item {
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #ffffff;
 }
 
 .team-user {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team-container {
+  text-align: center;
   margin: 32px 16px;
 }
 
@@ -275,20 +281,34 @@ button {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .portfolio-item {
+  display: block;
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-
+.description {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -300,12 +320,14 @@ button {
 /* #region Footer */
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px;
 }
 
 .footer-logo .logo-part {
   font-weight: 700;
   line-height: 1, 17;
   color: #f4f4fd;
+  margin-bottom: 16px;
 }
 
 .footer-text {
@@ -313,5 +335,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 /* #endregion */
