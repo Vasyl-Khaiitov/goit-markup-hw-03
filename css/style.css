@@ -135,7 +135,8 @@ button {
 /* #region Hero */
 .section-hero {
   background-color: #2e2f42;
-  padding: 188px;
+  padding-top: 188px;
+  padding-bottom: 100px;
 }
 
 .hero-tytle {
@@ -320,7 +321,8 @@ button {
 /* #region Footer */
 .page-footer {
   background-color: #2e2f42;
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo .logo-part {
